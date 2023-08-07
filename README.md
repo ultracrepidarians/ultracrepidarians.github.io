@@ -1,3 +1,7 @@
-# Reminder for when I wake up in the morning:
+# Important commands
 
-The command to run locally is `bundle exec jekyll serve --livereload`
+Run locally: `bundle exec jekyll serve --livereload`
+Add: `git add --all`
+Commit: `git commit -m "message"`
+Push: `git push -u origin main`
+Force (if needed): `git push -u origin main --force`
