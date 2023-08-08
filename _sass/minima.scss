@@ -39,8 +39,8 @@ $on-laptop:        800px !default;
   font-size: $base-font-size * $ratio;
 }
 
-/* @import */
-  /* "minima/base", */
-  /* // "minima/layout", // TODO: SEE EFFECT WITH POSTS */
-  /* "minima/syntax-highlighting" */
-/* ; */
+@import
+  "minima/base",
+  "minima/layout",
+  "minima/syntax-highlighting"
+;

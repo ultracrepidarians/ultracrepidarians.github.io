@@ -1,14 +1,12 @@
 title: Ultracrepidarians
 email: ucrepidarians@gmail.com
-description: >-
-  A compendium of musings from profound (and pretentious) individuals.
-baseurl: ""
-url: ""
+description: A compendium of musings from profound (and pretentious) individuals.
 
 theme: minima
+
 plugins:
   - jekyll-feed
-
+  
 permalink: /:collection/:year-:month-:day-:title:output_ext
 
 # Exclude from processing.
