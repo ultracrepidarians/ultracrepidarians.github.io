@@ -1,16 +1,15 @@
 <header class="site-header" role="banner">
-    {% assign default_paths = site.pages | map: "path" %} 
-    {% assign page_paths = site.header_pages | default: default_paths %}
 	<div class="site-branding">
 		<a class="logo-link" href="{{ '/' | relative_url }}" rel="home">
-		  <img class="logo-img" src="{{ 'tree-256.ico' | relative_url }}" draggable="false"/>
+		  <img class="logo-img" src="{{ '/assets/tree-256.ico' | relative_url }}" draggable="false"/>
 		</a>
 		<h1 class="site-title">
 			<a href="{{ '/' | relative_url }}" rel="home">{{ site.title }}</a>
 		</h1>
 	</div>
 
-	
+	{% assign default_paths = site.pages | map: "path" %} 
+    {% assign page_paths = site.header_pages | default: default_paths %}
     {%- if page_paths -%}
       <nav class="site-navigation" role="navigation">
         <div class="menu-container">

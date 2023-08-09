@@ -1,7 +1,9 @@
 ---
 layout: page
 title: Contact
-permalink: /contact/
 ---
 
-# Coming Soon
+# Coming soon!
+## Coming soon!
+### Coming soon!
+Coming soon!

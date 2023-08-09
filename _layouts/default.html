@@ -3,8 +3,11 @@
 	{%- include head.html -%}
 	<body>
 		{%- include header.html -%}
-		<div class="site-main">
+		<div class="site-container">
+		<main class="content-area">
 			{{ content }}
+		</main>
+		{%- include widgets.html -%}
 		</div>
 	</body>
 </html>

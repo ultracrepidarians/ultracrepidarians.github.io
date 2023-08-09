@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100;0,8..144,200;0,8..144,300;0,8..144,400;0,8..144,500;0,8..144,600;0,8..144,700;0,8..144,800;0,8..144,900;1,8..144,100;1,8..144,200;1,8..144,300;1,8..144,400;1,8..144,500;1,8..144,600;1,8..144,700;1,8..144,800;1,8..144,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+
 *, *::before, *::after {
 	box-sizing: border-box;
 }
@@ -8,7 +9,7 @@
 	margin: 0;
 	padding: 0;
 	font-family: Roboto;
-	border: none;
+	border: none;	
 }
 
 a {
@@ -23,6 +24,10 @@ body {
 	overscroll-behavior-x: none;
 	overscroll-behavior-y: none;
 }
+
+body::-webkit-scrollbar {
+    display: none;
+  }
 
 img, picture, video, canvas, svg {
 	display: block;
@@ -111,16 +116,25 @@ p, h1, h2, h3, h4, h5, h6 {
 	background-color: #343a40;
 }
 
-.site-main {
+.site-container {
 	max-width: 1300px;
 	position: relative;
 	margin: 3em auto;
 	word-wrap: break-word;
+	
 }
 
 .content-area {
 	width: 70%;
 	left: 30%;
+	padding-left: 1em;
+	float: left;
+	position: relative;
+}
+
+.widget-area {
+	width: 30%;
+	left: -70%;
 	padding-right: 1em;
 	float: left;
 	position: relative;
@@ -165,15 +179,6 @@ p, h1, h2, h3, h4, h5, h6 {
 	color: black;
 }
 
-.widget-area {
-	width: 30%;
-	left: -70%;
-	padding-right: 1em;
-	float: left;
-	position: relative;
-	font-size: 1rem;
-}
-
 .widget {
 	background: #f7f7f7;
 	padding: 1em 1.5em;
@@ -183,4 +188,60 @@ p, h1, h2, h3, h4, h5, h6 {
 	border-width: 5px;
 	border-radius: 8px;
 	border-image: radial-gradient(#dbdbe0, transparent);
+}
+
+.widget-area .search {
+	padding: 0;
+}
+
+.widget-area .recent h2 {
+	margin: 0 0 1em;
+	font-size: 1.2rem;
+}
+
+.search-bar {
+	width: 100%;
+	padding: 1em;
+}
+
+.search-bar:focus, .search-bar:hover {
+	outline: 1px solid #343a40;
+}
+
+.widget-area .recent ul {
+	padding: 0 0 0 1em;
+	margin: 0;
+}
+
+.widget-area .recent a, .widget-area .recent a:visited {
+	color: #343a40;
+	text-decoration: none;
+}
+
+.widget-area .recent a:hover {
+    text-decoration: underline;
+}
+
+.article-error {
+	background-color: white;
+	padding: 2em 2.5em;
+	margin-bottom: 3em;
+}
+
+.post-block {
+	background-color: white;
+	padding: 2em 2.5em;
+	margin-bottom: 3em;
+	line-height: 1.8;
+}
+
+.post-title {
+	font-size: 2rem;
+	color: #404040;
+	text-align: center;
+}
+
+.post-author {
+	text-align: right;
+	margin: 0 0 1em;
 }

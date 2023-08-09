@@ -8,11 +8,14 @@
 
 # TODO
 
-- Implement widgets: search bar, dark theme, socials, AOB.
-- Make widgets into \_includes so it can be used on post pages (and all others?)
+- Implement widgets: dark theme, socials, AOB.
 - Look into minima for markdown support. Implement for posts.
+	- Markdown partially works. Bold and headers tested working. Code block tested not working.
+- Experiment with removing search bar on posts or something.
 
 # Ideas
 
-- Replace About and Contact with 'pinned' posts.
 - Add a post field that highlights them gold and places them at the top of the homepage.
+
+# Other notes
+- Writers will publish markdown file/article text through Github Issues.
