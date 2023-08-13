@@ -1,20 +1,20 @@
 :root {
 	--header-bg: #141820;
-	--header-txt: #ffffff;
+	--header-txt: #dbdbe0;
 	--header-hover-bg: #343a40;
 	--header-border-bg: #2d3135;
-	--body-bg: #dbdbe0;
-	--article-bg: #ffffff;
-	--article-txt: #404040;
+	--body-bg: #141820;
+	--article-bg: #141820;
+	--article-txt: #dbdbe0;
 	--article-border-img: radial-gradient(#dbdbe0, transparent);
-	--article-author-txt: #4f4f4f;
+	--article-author-txt: #dbdbe0;
 	--article-author-underline-bg: #b5c1c9;
-	--article-title-txt: #343a40;
+	--article-title-txt: #dbdbe0;
 	--article-underline-bg: #adb9c6;
-	--widget-bg: #f7f7f7;
+	--widget-bg: #141820;
 	--widget-border-img: radial-gradient(#dbdbe0, transparent);
-	--widget-txt: #404040;
-	--search-border-bg: #343a40;
+	--widget-txt: #dbdbe0;
+	--search-border-bg: #eaeaea;
 	
 }
 

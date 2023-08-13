@@ -8,14 +8,19 @@
 
 # TODO
 
-- Implement widgets: dark theme, socials, AOB.
+- Style theme toggle button
+- Merge theme stylesheets and move variables into classes for html block
 - Look into minima for markdown support. Implement for posts.
-	- Markdown partially works. Bold and headers tested working. Code block tested not working.
-- Experiment with removing search bar on posts or something.
+	- Bold and headers working.
+	- Links working
+	- Images working
+	- HTML working
+	- Code (inline and block) not working.
 
 # Ideas
 
 - Add a post field that highlights them gold and places them at the top of the homepage.
 
 # Other notes
+
 - Writers will publish markdown file/article text through Github Issues.

@@ -1,52 +1,9 @@
 ---
 layout: default
+search: on
 ---
-<script>
-document.addEventListener('DOMContentLoaded', event => {
-	let search_bar = document.getElementById("search-bar");
-	let no_results = document.getElementById("no-results");
-	let no_articles = document.getElementById("no-articles");
-	let articles = document.getElementsByClassName("article");
-	
-	no_results.style.display = "none";
-	if (articles.length === 0) {
-		no_articles.style.display = "";
-	} else {
-		no_articles.style.display = "none";
-	}
-	
-	
-	search_bar.addEventListener('input', event => {
-		if (articles.length > 0) {
-			let filter = search_bar.value.toUpperCase();
-			
-			for (let i = 0; i < articles.length; i++) {
-				let article = articles[i];
-			
-				let titleH2 = article.getElementsByClassName("article-title")[0];
-				let titleA = titleH2.getElementsByTagName("a")[0];
-				let title = (titleA.textContent || titleA.innerText).toUpperCase();
-				
-				if (title.indexOf(filter) > -1) {
-					article.style.display = "";
-				} else {
-					article.style.display = "none";
-				}
-			}
-			
-			if (!Array.from(articles).some(article => article.style.display !== "none")) {
-				no_results.style.display = "";
-			} else {
-				no_results.style.display = "none";
-			}
-		}
-	});
-});
-</script>
-
 
 <article class="article-error" id="no-results"><p>Sorry but nothing matched your search terms. Please try again with some different keywords.</p></article>
-<article class="article-error" id="no-articles"><p>Sorry but nothing is currently available. Please try again lataer.</p></article>
 {%- if site.posts.size > 0 -%}
 	{%- for post in site.posts -%}
 		<article class="article">
