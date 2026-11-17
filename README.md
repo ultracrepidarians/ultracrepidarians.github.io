@@ -24,3 +24,9 @@
 # Other notes
 
 - Writers will publish markdown file/article text through Github Issues.
+
+## Development and layout
+
+Install the Ruby dependencies with `bundle install`, then run `bundle exec jekyll serve`; validate with `bundle exec jekyll build`. `_posts/` contains dated articles, `_layouts/` supplies page templates, and `_includes/` contains shared head, navigation, and widgets. Styles live in `assets/css/`; the favicon remains under `assets/`. Keep URLs wrapped in Liquid's `relative_url` filter when used by templates so configured base paths work.
+
+Theme switching must use the light/dark stylesheets in `assets/css/`. Generated `_site/` output is not source content.
